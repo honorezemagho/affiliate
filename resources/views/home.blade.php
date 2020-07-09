@@ -12,6 +12,7 @@
             <div class="card">
                 <div class="card-body">
                     <p class="mb-0">You are logged in!</p>
+                    <p> Working with laravel is very cool </p>
                 </div>
             </div>
         </div>
