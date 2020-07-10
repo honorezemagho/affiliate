@@ -19,7 +19,7 @@ class CreateUsersTable extends Migration
             $table->string('lastname');
             $table->string('email')->unique();
             $table->string('phone')->unique();
-            $table->string('referrer_id');
+            $table->string('referrer_id')->unsigned();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
