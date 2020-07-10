@@ -20,7 +20,7 @@
         {{-- Firstname field --}}
         <div class="input-group mb-3">
             <input type="text" name="firstname" class="form-control {{ $errors->has('firstname') ? 'is-invalid' : '' }}"
-                   value="{{ old('firstname') }}" placeholder="{{ __('adminlte::adminlte.firstname') }}" autofocus>
+                   value="{{ old('firstname') }}" placeholder="{{ __('adminlte::adminlte.first_name') }}" autofocus>
             <div class="input-group-append">
                 <div class="input-group-text">
                     <span class="fas fa-user {{ config('adminlte.classes_auth_icon', '') }}"></span>
@@ -36,7 +36,7 @@
          {{-- LastName field --}}
          <div class="input-group mb-3">
             <input type="text" name="lastname" class="form-control {{ $errors->has('lastname') ? 'is-invalid' : '' }}"
-                   value="{{ old('lastname') }}" placeholder="{{ __('adminlte::adminlte.lastname') }}" autofocus>
+                   value="{{ old('lastname') }}" placeholder="{{ __('adminlte::adminlte.last_name') }}" autofocus>
             <div class="input-group-append">
                 <div class="input-group-text">
                     <span class="fas fa-user {{ config('adminlte.classes_auth_icon', '') }}"></span>
@@ -67,7 +67,7 @@
 
           {{-- Phone field --}}
           <div class="input-group mb-3">
-            <input type="email" name="phone" class="form-control {{ $errors->has('phone') ? 'is-invalid' : '' }}"
+            <input type="number" name="phone" class="form-control {{ $errors->has('phone') ? 'is-invalid' : '' }}"
                    value="{{ old('phone') }}" placeholder="{{ __('adminlte::adminlte.phone') }}">
             <div class="input-group-append">
                 <div class="input-group-text">
@@ -84,7 +84,7 @@
             {{-- Referral iD  field --}}
             <div class="input-group mb-3">
                 <input type="hidden" name="referrer_id" class="form-control"
-                       value="{{ old('referral_id') }}" placeholder="{{ __('adminlte::adminlte.referrer_id') }}">
+                       value="1" placeholder="{{ __('adminlte::adminlte.referrer_id') }}">
             </div>           
              
 
